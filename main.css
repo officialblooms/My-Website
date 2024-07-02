@@ -1,0 +1,52 @@
+body {
+    font-family: helvetica, Arial, sans-serif;
+    color: var(--fontColor);
+    background: var(--bg);
+}
+
+h1 {
+    color: orange;
+}
+
+h2 {
+    color: lightskyblue;
+}
+
+.light-theme {
+    --bg: white;
+    --fontColor: black;
+}
+
+.dark-theme {
+    --bg: black;
+    --fontColor: white;
+}
+
+#hub {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.box {
+    background-color: lightgray;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 0px;
+    left: -10px;
+    opacity: 0.5;
+}
+
+.images {
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+}
+
+.minecraft {
+    height: 40%;
+    width: 40%;
+    padding: 10px;
+}
