@@ -26,20 +26,27 @@ h2 {
     padding: 10px;
     height: 100%;
     width: 100%;
-    position: absolute;
 }
 
 .box {
-    background-color: lightgray;
-    height: 50%;
-    width: 50%;
-    position: relative;
-    top: 0px;
-    left: -10px;
-    opacity: 0.5;
+    background-color: lightgoldenrodyellow;
+    width: 95%;
+    opacity: 0.7;
 }
 
-.images {
+.list {
+    position: relative;
+    width: 95%;
+    left: -5px;
+    padding: 10px;
+}
+
+.gdlevel {
+    width: 30%;
+    padding: 12px;
+}
+
+.gallery {
     height: 50%;
     width: 50%;
     padding: 10px;
