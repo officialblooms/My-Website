@@ -59,9 +59,25 @@ h2 {
     padding: 12px;
 }
 
+#forza-cars {
+    text-align: center;
+}
+
+.forza-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
 .forza {
     width: 30%;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.forza:hover {
+    transform: scale(1.2);
 }
 
 .gallery {
