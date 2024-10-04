@@ -3,6 +3,7 @@ body {
     color: var(--fontColor);
     background: var(--bg);
     font-size: 20px;
+    margin: 0;
 }
 
 h1 {
@@ -20,56 +21,139 @@ h2 {
 div {
     text-align: center;
 }
+
 div ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-p {
-    max-width: 100rem;
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.light-theme {
-    --bg: white;
-    --fontColor: black;
-    --box: yellow;
+.navbar .nav-link {
+    color: white;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-align: center;
 }
 
-.dark-theme {
-    --bg: black;
-    --fontColor: white;
-    --box: lightgoldenrodyellow;
+.navbar .nav-link:hover {
+    background-color: #575757;
 }
 
 #theme {
     float: right;
-    position: relative;
-    width: 8%;
+    position: absolute;
+    width: 5%;
     font-size: 20px;
+    max-width: 5rem;
+    right: 4rem;
 }
 
-#hub {
+.light-theme {
+    --bg: rgb(201, 186, 208);
+    --fontColor: rgb(53, 51, 51);
+    --box: yellow;
+}
+
+.dark-theme {
+    --bg: rgb(41, 16, 0);
+    --fontColor: white;
+    --box: lightgoldenrodyellow;
+}
+
+.content {
+    padding-top: 5rem;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+#bio {
     padding: 10px;
-    height: 100%;
-    width: 100%;
-}
-
-.box {
-    background-color: var(--box);
     width: 95%;
+    text-align: center;
 }
 
-.list {
-    position: relative;
-    width: 95%;
-    left: -5px;
-    padding: 10px;
+#wordle-demo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
 
-.gdlevel {
-    width: 30%;
-    padding: 12px;
+#wordle-demo-container img {
+    max-width: 100%;
+    height: auto;
+    width: 40rem;
+}
+
+#wordle-demo-text {
+    padding-left: 1.5rem;
+    max-width: 40rem;
+}
+
+#chopin-liszt-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+#chopin-liszt-container img {
+    max-width: 100%;
+    height: auto;
+    width: 50rem;
+}
+
+#chopin-liszt-text {
+    padding-right: 1.5rem;
+    max-width: 40rem;
+}
+
+#youtube-channel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+#youtube-channel-container p { /* replace this with embed or whatever */
+    max-width: 100%;
+    height: auto;
+    width: 40rem;
+}
+
+#youtube-channel-text {
+    padding-left: 1.5rem;
+    max-width: 40rem;
+}
+
+#twitch-channel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+#twitch-channel-container p {
+    max-width: 100%;
+    height: auto;
+    width: 50rem;
+}
+
+#twitch-channel-text {
+    padding-right: 1.5rem;
+    max-width: 40rem;
 }
 
 #forza-cars {
@@ -99,7 +183,7 @@ p {
     padding: 10px;
 }
 
-.minecraft {
+.minecraft-img {
     height: 40%;
     width: 40%;
     padding: 10px;
