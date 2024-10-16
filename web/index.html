@@ -10,12 +10,15 @@
     <script src="script.js" defer></script>
 </head>
 
-<body class="dark-theme">
+<body id="main" class="dark-theme">
     <div class="navbar">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about-me" class="nav-link">About Me</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#skills" class="nav-link">Music</a>
         <a href="#photo-gallery" class="nav-link">Photo Gallery</a>
-        <a href="#miscellaneous" class="nav-link">Miscellaneous</a>
+        <a href="#forza-gallery" class="nav-link">Forza Gallery</a>
+        <a href="#minecraft" class="nav-link">Minecraft</a>
         <select id="theme" value="Dark">
             <option value="light">Light</option>
             <option value="dark" selected>Dark</option>
@@ -29,15 +32,14 @@
             <div id="bio">Hi! I'm Evan Mao. I'm a student at University of Washington studing computer science.
                 I currently reside in Redmond, Washington but was originally from Canada (eh!).
                 <br>
-                My interests and passions include programming, playing classical music on piano and trombone,
-                and playing Geometry Dash and Minecraft in my free time! I also enjoying socializing with
-                friends, meeting new people, and keen to learn new things!
+                My interests and passions include programming, playing piano and trombone, video games, and skiing
+                on the mountains! I also enjoying socializing with friends, meeting new people, and keen to learn new things!
                 <br>
                 Get in touch with me at <a href="mailto:evanzmao@gmail.com">evanzmao@gmail.com</a>! Check out
                 my resume <a href="./evan_resume.pdf">here!</a>
             </div>
         </div>
-        <div id="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <p>Below are some fun projects related to my passions I have worked on!
                 <br>
@@ -112,7 +114,7 @@
                 </div>
                 <div id="twitch-channel-video">&lt insert random video from stream archives here ></div>
             </div>
-        </div>
+        </section>
         <div id="skills">
             <h2>Skills</h2>
             <h3>Languages</h3>
@@ -148,7 +150,7 @@
                 <li><a href="https://www.reddit.com/user/gaggagHah/">Reddit Page</a></li>
             </ul>
         </div>
-        <div id="gallery">
+        <section id="photo-gallery">
             <h2>Photo Gallery</h2>
             <h3>Husky Marching Band at the PAC-12 Championship</h3>
             <img class="gallery" alt="me with the marching band after winning the PAC-12 Championship game" id="band"
@@ -186,8 +188,8 @@
                 watch
                 the full performance!
             </p>
-        </div>
-        <div id="forza-cars">
+        </section>
+        <section id="forza-gallery">
             <h2>Forza Horizon 5 Gallery</h2>
             <p>I love cars, and I love photographing them as well! Unfortunately I do not own a $1+ million supercar
                 and
@@ -225,8 +227,8 @@
                 <img class="forza" alt="pagani huarya bc" id="huayra2" src="./vehicles/pagani 2.jpg" />
                 <img class="forza" alt="pagani huarya bc" id="huayra3" src="./vehicles/pagani 3.jpg" />
             </span>
-        </div>
-        <div id="minecraft">
+        </section>
+        <section id="minecraft">
             <h2>Minecraft</h2>
             <p>minecraft</p>
             <span class="minecraft-holder">
@@ -239,7 +241,7 @@
                 <img class="minecraft-img" alt="minecraft" id="allay4" src="./minecraft/allay 4.png" />
                 <img class="minecraft-img" alt="minecraft" id="enderman" src="./minecraft/enderman.png" />
             </span>
-        </div>
+        </section>
 
         <div id="footer">
             © 2024 Evan Mao

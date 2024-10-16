@@ -42,7 +42,7 @@ div ul {
 
 .navbar .nav-link {
     color: white;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
     text-align: center;
 }
@@ -156,7 +156,7 @@ div ul {
     max-width: 40rem;
 }
 
-#forza-cars {
+#forza-gallery {
     text-align: center;
 }
 
