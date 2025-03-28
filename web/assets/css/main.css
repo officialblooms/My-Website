@@ -2288,6 +2288,10 @@ body.is-preload #wrapper {
 		text-align: center;
 	}
 
+	#main>.panel.intro .icon-container {
+		justify-content: center;
+	}
+
 }
 
 @media screen and (max-width: 736px) {
