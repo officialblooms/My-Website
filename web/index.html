@@ -1,257 +1,241 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 
 <head>
-    <title>Evan Mao's Website</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css">
-    <script src="script.js" defer></script>
+	<title>Evan Mao's Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body id="main" class="dark-theme">
-    <div class="navbar">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#skills" class="nav-link">Music</a>
-        <a href="#photo-gallery" class="nav-link">Photo Gallery</a>
-        <a href="#forza-gallery" class="nav-link">Forza Gallery</a>
-        <a href="#minecraft" class="nav-link">Minecraft</a>
-        <select id="theme" value="Dark">
-            <option value="light">Light</option>
-            <option value="dark" selected>Dark</option>
-        </select>
-    </div>
-    <div class="content">
-        <div id="aboutme">
-            <img id="portrait" alt="me" id="me" src="./images/portrait.jpg" />
-            <h1>Evan Mao</h1>
-            <h3>Programmer, Musician, Canadian</h3>
-            <div id="bio">Hi! I'm Evan Mao. I'm a student at University of Washington studing computer science.
-                I currently reside in Redmond, Washington but was originally from Canada (eh!).
-                <br>
-                My interests and passions include programming, playing piano and trombone, video games, and skiing
-                on the mountains! I also enjoying socializing with friends, meeting new people, and keen to learn new things!
-                <br>
-                Get in touch with me at <a href="mailto:evanzmao@gmail.com">evanzmao@gmail.com</a>! Check out
-                my resume <a href="./evan_resume.pdf">here!</a>
-            </div>
-        </div>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Below are some fun projects related to my passions I have worked on!
-                <br>
-                <a href="https://github.com/officialblooms/Wordle">Wordle (Evan Mao Version)</a>
-            <div id="wordle-demo-container">
-                <div id="wordle-demo-image">
-                    <img class="project" alt="my wordle bot played on the console of VS code" id="wordle-demo"
-                        src="./projects/wordle_demo.jpg" />
-                </div>
-                <div id="wordle-demo-text">
-                    This Wordle program is a Java project I started in High School that I continue to refine as I
-                    learn more about programming in university!
-                    It prompts the user to guess a word of desired length (from 3 to 6 letters) and gives
-                    feedback on the correctness of the guess, like
-                    the real Wordle, except more flexible! This program also features hard mode as well! I'm
-                    currently working on implementing it into
-                    its own website so that it can be played online!
+<body class="is-preload">
 
-                </div>
-            </div>
-            <br>
-            <a href="https://github.com/officialblooms/chopin-liszt">"Chopin Liszt" Discord Bot</a>
-            <div id="chopin-liszt-container">
-                <div id="chopin-liszt-text">
-                    Chopin Liszt (sounds very similar to "shopping list") is a passion project to practice coding in
-                    Python, and also further educate myself
-                    on topics I am passionate about: Classical Music, and the Beatles! The bot includes features
-                    such as picking out a random song from a
-                    user-specificied Spotify playlist, posting random supercars alongside information about them
-                    from Google Gemini, and a daily message
-                    that includes history of a random Beatles and classical song! I'm currently working on
-                    implementing more features and commands to make
-                    the bot more interactive and enjoyable for users with similar interests as me!
-                </div>
-                <div id="chopin-liszt-image">
-                    <img class="project" alt="my discord bot in action" id="discord-bot"
-                        src="./projects/discord_bot.jpg" />
-                </div>
-            </div>
-            <br>
-            <a href="https://www.youtube.com/c/OfficialBlooms">My Youtube Channel</a>
-            <div id="youtube-channel-container">
-                <div id="youtube-channel-video">
-                    <p>&lt insert random video from OfficialBLooms here > </p>
-                </div>
-                <div id="youtube-channel-text">I have been doing Youtube since I was very young, and although my
-                    activity on there has
-                    diminshed, I still post things I have worked very
-                    hard on that I am proud of and want to share with the world! Some notable videos on my channel
-                    that I really enjoyed making include my many
-                    Geometry Dash videos such as <a href="https://www.youtube.com/watch?v=YY6IzhKMrg0">this one</a>
-                    ;), my
-                    <a href="https://www.youtube.com/watch?v=HVx8YoSzhE0&t=902s">Wii Photos Channel
-                        transcription</a> video, and my
-                    <a href="https://www.youtube.com/watch?v=8xa4LNzJES0&t=839s">20-minute Minecraft parkour</a>
-                    video!
-                </div>
-            </div>
-            <br>
-            <a href="https://www.twitch.tv/officialblooms">My Twitch Channel</a>
-            <div id="twitch-channel-container">
-                <div id="twitch-channel-text"> I started streaming regularly on Twitch in 2020, gaining over 3,000
-                    followers online through my
-                    friendly interactions and entertainment with
-                    viewers. On my 2+ hour livestreams, I played games like Minecraft, Geometry Dash, or other games
-                    that I and my fans enjoy. I often hosted
-                    special events where viewers would compete for prizes, or where for every $5 donated I would
-                    spin a wheel that would determine a random, pretty
-                    embarrassing thing I would have to do on stream in front of often 20-30 concurrent viewers. I'm
-                    currently on a hiatus from streaming due to
-                    university, but I plan on returning to it soon!
-                </div>
-                <div id="twitch-channel-video">&lt insert random video from stream archives here ></div>
-            </div>
-        </section>
-        <div id="skills">
-            <h2>Skills</h2>
-            <h3>Languages</h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Java/TypeScript</li>
-                <li>HTML/CSS</li>
-                <li>C/C++</li>
-            </ul>
-            <h3>Frameworks</h3>
-            <ul>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>PyMongo</li>
-            </ul>
-            <h3>Developer Tools</h3>
-            <ul>
-                <li>Git</li>
-                <li>VS Code</li>
-                <li>Visual Studio</li>
-            </ul>
-        </div>
-        <div id="socials">
-            <h2>My Socials</h2>
-            <p>Connect with me on other social media sites!
-                active</p>
-            <ul>
-                <li><a href="https://github.com/officialblooms">GitHub Page</a></li>
-                <li><a href="https://www.linkedin.com/in/evan-mao-47312b2a7">LinkedIn Page</a></li>
-                <li><a href="https://discord.com/AmYknwz">Discord Server</a></li>
-                <li><a href="https://musescore.com/user/36492189">Musescore Page</a></li>
-                <li><a href="https://www.reddit.com/user/gaggagHah/">Reddit Page</a></li>
-            </ul>
-        </div>
-        <section id="photo-gallery">
-            <h2>Photo Gallery</h2>
-            <h3>Husky Marching Band at the PAC-12 Championship</h3>
-            <img class="gallery" alt="me with the marching band after winning the PAC-12 Championship game" id="band"
-                src=".\images\band.jpg" />
-            <p>I am a member of the Husky Marching Band in my university, and in 2023 our football team went to the
-                PAC-12 Football
-                Championship in Las Vegas, Nevada! It was an intense game, but we came through with the win! Here is
-                a
-                photo of me
-                alongside my friends celebrating the win!
-            </p>
-            <h3>Conducting my High School's Wind Ensemble</h3>
-            <img class="gallery" alt="me conducting the RHS Wind Ensemble for my senior year concert" id="conductor"
-                src=".\images\conductor.jpg" />
-            <p>
-                Back in my senior year, I had the opportunity to conduct the last piece for my school's Wind
-                Ensemble
-                concert! I worked with my bandmates to prepare the piece, and share my musical knowledge with them
-                to
-                perform in front
-                of 300+ people. It was a great experience and I enjoyed every moment of it! Here is a
-                <a href="https://youtu.be/hGk5psnp0Dg">video</a> of the performance!
-            </p>
-            <h3>Performing a piano concerto</h3>
-            <img class="gallery" alt="me performing with the Mukilteo Community Orchestra lead by Shaun Day" id="piano"
-                src=".\images\piano.jpg" />
-            <p>
-                Back in 2022, I won a local piano competition and performed Rachmaninoff's Second Piano Concerto
-                with
-                the Mukilteo Community
-                Orchestra at a live concert attended by over 200 people! I collaborated with the conductor, Shaun
-                Day,
-                to ensure the performance
-                would be spectacular. Click <a href="https://youtu.be/VY6jcFF3nAo?si=t3spjPsYvHEP4MEJ">here</a> to
-                watch
-                the full performance!
-            </p>
-        </section>
-        <section id="forza-gallery">
-            <h2>Forza Horizon 5 Gallery</h2>
-            <p>I love cars, and I love photographing them as well! Unfortunately I do not own a $1+ million supercar
-                and
-                have no plans to
-                buy one anytime soon, but I do have lots in Forza Horizon 5! Here are some of my favorite cars I
-                have
-                taken photos of in the game!
-                <br>
-                (I will make this prettier soon probably hopefully)
-            </p>
-            <span class="forza-holder">
-                <img class="forza" alt="koenigsegg agera rs" id="agera1" src="./vehicles/agera 1.jpg" />
-                <img class="forza" alt="koenigsegg agera rs" id="agera2" src="./vehicles/agera 2.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo1" src="./vehicles/apollo 1.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo2" src="./vehicles/apollo 2.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo3" src="./vehicles/apollo 3.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo4" src="./vehicles/apollo 4.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo5" src="./vehicles/apollo 5.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo6" src="./vehicles/apollo 6.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo7" src="./vehicles/apollo 7.jpg" />
-                <img class="forza" alt="apollo intenza emotizone" id="apollo8" src="./vehicles/apollo 8.jpg" />
-                <img class="forza" alt="cheverlot corvette" id="corvette1" src="./vehicles/corvette.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko1" src="./vehicles/jesko 1.png" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko2" src="./vehicles/jesko 2.png" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko3" src="./vehicles/jesko 3.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko4" src="./vehicles/jesko 4.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko5" src="./vehicles/jesko 5.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko6" src="./vehicles/jesko 6.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko7" src="./vehicles/jesko 7.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko8" src="./vehicles/jesko 8.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko9" src="./vehicles/jesko 9.jpg" />
-                <img class="forza" alt="koenigsegg jesko attack" id="jesko10" src="./vehicles/jesko 10.jpg" />
-                <img class="forza" alt="mercedes something idk" id="mercedes1" src="./vehicles/mercedes.jpg" />
-                <img class="forza" alt="pagani huarya bc" id="huayra1" src="./vehicles/pagani 1.jpg" />
-                <img class="forza" alt="pagani huarya bc" id="huayra2" src="./vehicles/pagani 2.jpg" />
-                <img class="forza" alt="pagani huarya bc" id="huayra3" src="./vehicles/pagani 3.jpg" />
-            </span>
-        </section>
-        <section id="minecraft">
-            <h2>Minecraft</h2>
-            <p>minecraft</p>
-            <span class="minecraft-holder">
-                <img class="minecraft-img" alt="minecraft" id="allay1" src="./minecraft/allay 1.png" />
-                <img class="minecraft-img" alt="minecraft" id="axolotl" src="./minecraft/axolotl.png" />
-                <img class="minecraft-img" alt="minecraft" id="allay2" src="./minecraft/allay 2.png" />
-                <img class="minecraft-img" alt="minecraft" id="blooms" src="./minecraft/blooms.png" />
-                <img class="minecraft-img" alt="minecraft" id="allay3" src="./minecraft/allay 3.png" />
-                <img class="minecraft-img" alt="minecraft" id="dolphin" src="./minecraft/dolphin.png" />
-                <img class="minecraft-img" alt="minecraft" id="allay4" src="./minecraft/allay 4.png" />
-                <img class="minecraft-img" alt="minecraft" id="enderman" src="./minecraft/enderman.png" />
-            </span>
-        </section>
+	<!-- Wrapper-->
+	<div id="wrapper">
 
-        <div id="footer">
-            © 2024 Evan Mao
-        </div>
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#aboutme" class="icon solid fa-user"><span>About Me</span></a>
+			<a href="#projects" class="icon solid fa-desktop"><span>Projects</span></a>
+			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+		</nav>
 
-    </div>
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-        data-cf-beacon='{"token": "e60f0050593b4c76920122268598c9b7"}'></script>
-    <!-- End Cloudflare Web Analytics -->
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Home -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>Evan Mao</h1>
+					<p>Computer Scientist at the University of Washington</p>
+					<div class="icon-container">
+						<a href="https://www.linkedin.com/in/evan-mao-47312b2a7/" class="icon brands fa-linkedin"></a>
+						<a href="https://github.com/officialblooms" class="icon brands fa-github"></a>
+					</div>
+				</header>
+				<a href="#" class="jumplink pic">
+					<img src="./assets/css/images/portrait.jpg" alt="" />
+				</a>
+			</article>
+
+			<!-- About Me -->
+			<article id="aboutme" class="panel">
+				<header>
+					<h2>About Me</h2>
+				</header>
+				<p>
+					Hi, I'm Evan Mao and welcome to my website! I am a Chinese-Canadian, born in Alberta, Canada, before
+					moving to America in 2021,
+					where I am currently living in Redmond, Washington. I am studying computer science student at the
+					University of Washington in Seattle. I have a strong passion in
+					problem solving, tackling new problems, and continuing to learn new things about technology in the
+					field.
+				</p>
+				<p>
+					I am also part of the UW Husky Marching Band and Wind Ensemble, playing trombone and collaborating
+					with many other
+					musicians like me to perform in front of thousands of people. I also used to be a competitive
+					pianist, winning many
+					gold medals in state competitions. I still practice piano occasionally.
+				</p>
+				<p>
+					Some other hobbies I have include skiing, video games, admiring cool cars, meeting new people, and
+					playing Catan!
+				</p>
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic01.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic02.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic03.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic04.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic05.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic06.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic07.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic08.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic09.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic10.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic11.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a class="image fit"><img src="./assets/css/images/aboutme/pic12.jpg" alt=""></a>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<!-- Projects -->
+			<article id="projects" class="panel">
+				<header>
+					<h2>Projects</h2>
+				</header>
+				<h3>Custom Length Wordle</h3>
+				<div class="separator"></div>
+				<div>
+					<img class="image project" alt="my wordle bot played on the console of VS code" id="wordle-demo"
+						src="./assets/css/images/wordle_demo.png" />
+				</div>
+				<p>
+					This <a href="https://github.com/officialblooms/Wordle">Wordle program</a> is a Java project I
+					started in High School that I continue to refine as I learn
+					more about programming in university!
+					It prompts the user to guess a word of desired length (from 3 to 6 letters) and gives feedback on
+					the correctness of the guess, like the real Wordle,
+					except more flexible! This program also features hard mode as well! I'm currently working on
+					implementing it into its own website so that it can be played online!
+				</p>
+				<h3>"Chopin Liszt" Discord Bot</h3>
+				<div class="separator"></div>
+				<div>
+					<img class="image project" alt="my discord bot in action" id="discord-bot"
+						src="./assets/css/images/discord_bot.jpg" />
+				</div>
+				<p>
+					Chopin Liszt (sounds very similar to "shopping list") is a passion project to practice coding in
+					Python, and also further educate myself on topics
+					I am passionate about: Classical Music, and the Beatles! The bot includes features such as picking
+					out a random song from a user-specificied Spotify
+					playlist, posting random supercars alongside information about them from Google Gemini, and a daily
+					message that includes history of a random Beatles
+					and classical song! <br>
+					<b>FULL DISCLAIMER:</b> I haven't actually gotten into deploying the bot for users to test, so you
+					can't actually use it at the moment. I'm currently working
+					on making it happen, as well as implementing more features and commands to make the bot more
+					interactive and enjoyable for users with similar interests as me!
+				</p>
+				<h3>My Youtube Channel</h3>
+				<div class="separator"></div>
+				<div class="image project">
+					<img class="image project" alt="front page of my youtube channel (sorted by most popular)"
+						id="youtube-channel" src="./assets/css/images/youtube.png" />
+				</div>
+				<p>
+					I have a Youtube channel where I post all sorts of things related to my hobbies. I have a
+					<a href="https://www.youtube.com/watch?v=YY6IzhKMrg0">Geometry Dash video</a> with over 2.2 million
+					views, a
+					<a href="https://www.youtube.com/watch?v=HVx8YoSzhE0&t=902s">three-year music transcription
+						project</a>
+					on one of the "games" on the Nintendo Wii, and recently, I spent over three days making a
+					<a href="https://www.youtube.com/watch?v=8xa4LNzJES0&t=839s">Minecraft video</a>
+					showcasing a relaxing parkour course with giant mob builds and beautiful scenery!
+				</p>
+				<h3>My Twitch Channel</h3>
+				<div class="separator"></div>
+				<iframe class="image project" height="450em"
+					src="https://www.youtube.com/embed/1GYflB3enls?si=0n-OlX9vkX2KkIjM" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+				<p>
+					I used to be a live streamer on <a href="https://www.twitch.tv/officialblooms">Twitch</a>, where I
+					would
+					stream games very frequently and talk
+					with my viewers, new or returning, about many
+					different things, and just having a great time! Unfortunately, due to college, I haven't had the
+					chance to
+					stream, but I hope to get back into it soon!
+					Above is a video of an event I hosted on the popular video game Minecraft, where my viewers would
+					fight each other and win prizes. It was a super fun event!
+				</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<header>
+					<h2>Contact Me</h2>
+				</header>
+				<form action="https://formspree.io/f/xanedqbe" method="POST">
+					<div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Send Message" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; 2025 by Evan Mao</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
