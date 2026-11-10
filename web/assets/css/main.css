@@ -1459,7 +1459,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 15pt;
+		font-size: 18pt;
 	}
 
 }
@@ -1470,7 +1470,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 14pt;
+		font-size: 16pt;
 	}
 
 }
@@ -1481,7 +1481,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 12pt;
+		font-size: 13pt;
 	}
 
 }
@@ -1492,7 +1492,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 11pt;
+		font-size: 12pt;
 	}
 
 }
@@ -1743,7 +1743,7 @@ header>p {
 .image.project {
 	display: block;
 	width: 100%;
-	margin: 2em 0 2em 0;
+	margin: 1em 0 1em 0;
 }
 
 .image.project.video {
@@ -2394,6 +2394,15 @@ body.is-preload #wrapper {
 #aboutme p {
 	font-size: 0.9em;
 	line-height: 1.6;
+}
+
+#projects p {
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+body #contact {
+	font-size: 12pt;
 }
 
 /* Hide scrollbar*/
