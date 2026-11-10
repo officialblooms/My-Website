@@ -23,9 +23,10 @@
 		});
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
+		$(function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$('#intro-splash').addClass('is-hidden');
 			}, 100);
 		});
 
