@@ -2314,7 +2314,7 @@ body.is-preload #wrapper {
 	}
 
 	#main>.panel.intro header {
-		padding: 4em;
+		padding: 4em 1em;
 		text-align: center;
 	}
 
