@@ -2391,6 +2391,68 @@ body.is-preload #wrapper {
 
 }
 
+/* Lightbox background */
+body.lightbox-open {
+	overflow: hidden;
+}
+
+#lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	cursor: zoom-out;
+	overflow: hidden;
+	touch-action: none;
+}
+
+/* Visible lightbox */
+#lightbox.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Expanded image */
+#lightbox img {
+	max-width: 90%;
+	max-height: 85vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	transform: scale(1);
+	transition: transform 0.3s ease;
+	border-radius: 5px;
+	cursor: zoom-in;
+	user-select: none;
+	-webkit-user-drag: none;
+	touch-action: none;
+}
+
+#lightbox.active img.zoomed {
+	cursor: grab;
+	transition: none;
+}
+
+#lightbox.active img.dragging {
+	cursor: grabbing;
+	transition: none;
+}
+
+#aboutme img {
+	transition: transform 0.3s ease;
+}
+
+#aboutme img:hover {
+	cursor: pointer;
+	transform: scale(1.08);
+}
+
 #aboutme p {
 	font-size: 0.9em;
 	line-height: 1.6;
