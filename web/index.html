@@ -48,7 +48,7 @@
 				</header>
 				<a class="jumplink pic">
 					<img src="./assets/css/images/portrait.jpg"
-						alt="me posing in front of golden ears mountain viewpoint" />
+						alt="me posing with tulips" />
 				</a>
 			</article>
 
@@ -71,31 +71,49 @@
 				<section>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic01.jpg" alt=""></a>
+							<a class="image fit" data-caption="Performing with the Mukilteo Community Orchestra as one of the winners of a Piano Concerto Competition - December 2022">
+								<img src="./assets/css/images/aboutme/pic01.jpg" alt="Performing with the Mukilteo Community Orchestra - December 2022">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic02.jpg" alt=""></a>
+							<a class="image fit" data-caption="Skiing in Whistler Blackcomb Ski Resort, B.C, Canada - January 2026">
+								<img src="./assets/css/images/aboutme/pic02.jpg" alt="Skiing in Whistler Mountain, B.C, Canada - January 2026">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic03.jpg" alt=""></a>
+							<a class="image fit" data-caption="Standing atop Golden Ears Peak, B.C. Canada during a 2-day Backpacking trip - August 2024">
+								<img src="./assets/css/images/aboutme/pic03.jpg" alt="Standing atop Golden Ears Peak, B.C. Canada during a 2-day Backpacking trip - August 2024">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic04.jpg" alt=""></a>
+							<a class="image fit" data-caption="Leading the Redmond High School's Wind Ensemble for our year-end concert - June 2023">
+								<img src="./assets/css/images/aboutme/pic04.jpg" alt="Leading the Redmond High School's Wind Ensemble for our year-end concert - June 2023">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic5.jpg" alt=""></a>
+							<a class="image fit" data-caption="With an Aston Martin Valkyrie at the Petersen Automotive Museum, Los Angeles, CA - December 2025">
+								<img src="./assets/css/images/aboutme/pic5.jpg" alt="With an Aston Martin Valkyrie at the Petersen Automotive Museum, Los Angeles, CA - December 2025">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic06.jpg" alt=""></a>
+							<a class="image fit" data-caption="With my favorite band director and UW's Wind Ensemble TA, Solomon Encina, at our year-end concert - May 2026">
+								<img src="./assets/css/images/aboutme/pic06.jpg" alt="With my favorite band director and UW's Wind Ensemble TA, Solomon Encina, at our year-end concert - May 2026">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic7.jpg" alt=""></a>
+							<a class="image fit" data-caption="After winning the 2023 PAC-12 Championships, Washington vs. Oregon in Las Vegas, NV - December 2023">
+								<img src="./assets/css/images/aboutme/pic7.jpg" alt="After winning the 2023 PAC-12 Championships, Washington vs. Oregon in Las Vegas, NV - December 2023">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic8.jpg" alt=""></a>
+							<a class="image fit" data-caption="Standing next to the Mozart Monument at Hofburg, Vienna, Austria - December 2024">
+								<img src="./assets/css/images/aboutme/pic8.jpg" alt="Standing next to the Mozart Monument at Hofburg, Vienna, Austria - December 2024">
+							</a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a class="image fit"><img src="./assets/css/images/aboutme/pic09.jpg" alt=""></a>
+							<a class="image fit" data-caption="With my girlfriend at one of UW's Football games at Husky Stadium - October 2026">
+								<img src="./assets/css/images/aboutme/pic09.jpg" alt="With my girlfriend at one of UW's Football games at Husky Stadium - October 2026">
+							</a>
 						</div>
 					</div>
 				</section>
@@ -211,7 +229,10 @@
 
 	<!-- Lightbox -->
 	<div id="lightbox">
-    <img src="" alt="Expanded photo">
+    <div class="lightbox-content">
+        <img src="" alt="Expanded photo">
+        <div id="lightbox-caption"></div>
+    </div>
 	</div>
 	
 	<!-- Scripts -->

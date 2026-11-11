@@ -213,6 +213,14 @@
 	// About Me photo lightbox
 	const lightbox = document.getElementById('lightbox');
 	const lightboxImg = lightbox.querySelector('img');
+	const lightboxCaption = document.getElementById('lightbox-caption');
+
+	function updateCaptionWidth() {
+    lightboxCaption.style.width = `${lightboxImg.getBoundingClientRect().width}px`;
+	}
+
+	lightboxImg.addEventListener('load', updateCaptionWidth);
+	window.addEventListener('resize', updateCaptionWidth);	
 
 	const zoomScale = 2.5;	
 
@@ -263,6 +271,7 @@
 		translateY = 0;
 
 		lightboxImg.classList.add('zoomed');
+		lightbox.classList.add('zoom-mode');
 		updateTransform();
 	}
 
@@ -273,6 +282,7 @@
 		translateY = 0;
 
 		lightboxImg.classList.remove('zoomed');
+		lightbox.classList.remove('zoom-mode');
 		updateTransform();
 	}
 		
@@ -281,6 +291,9 @@
 		img.addEventListener('click', () => {
 			lightboxImg.src = img.src;
 			lightboxImg.alt = img.alt;
+
+			lightboxCaption.textContent =
+				img.closest('.image.fit').dataset.caption || '';
 
 			zoomOut();
 
@@ -371,12 +384,12 @@
 	function closeLightbox() {
 		lightbox.classList.remove('active');
 		$body.removeClass('lightbox-open');
-		resetZoom();
+		zoomOut();
 	}
 
 	// Close when clicking outside the image or Esc
 	lightbox.addEventListener('click', (e) => {
-    if (e.target !== lightboxImg) {
+    if (e.target === lightbox) {
 			closeLightbox();
     }
 	});

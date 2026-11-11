@@ -358,7 +358,7 @@ textarea {
 }
 
 .row>* {
-	padding: 1.25em 0 0 1.25em;
+	padding: 1.0em 0 0 1.0em;
 }
 
 .row.gtr-uniform {
@@ -601,7 +601,7 @@ textarea {
 	}
 
 	.row>* {
-		padding: 1.25em 0 0 1.25em;
+		padding: 1.0em 0 0 1.0em;
 	}
 
 	.row.gtr-uniform {
@@ -846,7 +846,7 @@ textarea {
 	}
 
 	.row>* {
-		padding: 1.25em 0 0 1.25em;
+		padding: 1.0em 0 0 1.0em;
 	}
 
 	.row.gtr-uniform {
@@ -1091,7 +1091,7 @@ textarea {
 	}
 
 	.row>* {
-		padding: 1.25em 0 0 1.25em;
+		padding: 1.0em 0 0 1.0em;
 	}
 
 	.row.gtr-uniform {
@@ -1336,7 +1336,7 @@ textarea {
 	}
 
 	.row>* {
-		padding: 1.25em 0 0 1.25em;
+		padding: 1.0em 0 0 1.0em;
 	}
 
 	.row.gtr-uniform {
@@ -2407,7 +2407,6 @@ body.lightbox-open {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease, visibility 0.3s ease;
-	cursor: zoom-out;
 	overflow: hidden;
 	touch-action: none;
 }
@@ -2416,6 +2415,41 @@ body.lightbox-open {
 #lightbox.active {
 	opacity: 1;
 	visibility: visible;
+}
+
+/* Image and caption container */
+#lightbox .lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+}
+
+/* Expanded image */
+#lightbox .lightbox-content img {
+    max-width: 90vw;
+    max-height: calc(85vh - 2.5rem);
+}
+
+/* Caption beneath expanded image */
+#lightbox-caption {
+    margin-top: 15px;
+
+    color: white;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: center;
+
+    max-width: 80vw;
+
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+/* Hide caption during zoom mode */
+#lightbox.zoom-mode #lightbox-caption {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Expanded image */
@@ -2444,6 +2478,48 @@ body.lightbox-open {
 	transition: none;
 }
 
+/* Gallery thumbnail containers */
+#aboutme .image.fit {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover captions */
+#aboutme .image.fit::after {
+    content: attr(data-caption);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+    	to top,
+			rgba(0, 0, 0, 0.85) 0%,
+			rgba(0, 0, 0, 0.5) 50%,
+			rgba(0, 0, 0, 0) 100%
+		);
+    color: white;
+    text-align: center;
+
+    padding: 25px 12px 12px;
+    font-size: 0.6em;
+    line-height: 1.2;
+
+    /* Initially hidden below the image */
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+
+    pointer-events: none;
+}
+
+/* Slide caption up when hovered */
+#aboutme .image.fit:hover::after {
+    transform: translateY(0);
+}
+
 #aboutme img {
 	transition: transform 0.3s ease;
 }
@@ -2451,6 +2527,10 @@ body.lightbox-open {
 #aboutme img:hover {
 	cursor: pointer;
 	transform: scale(1.08);
+}
+
+#aboutme .image.fit {
+	display: block;
 }
 
 #aboutme p {
