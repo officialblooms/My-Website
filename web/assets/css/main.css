@@ -2331,7 +2331,7 @@ body.is-preload #wrapper {
 	}
 
 	#main>.panel.intro header {
-		padding: 2.75em 2em 2.5em 2em;
+		padding: 2.75em 1em 2.5em 1em;
 	}
 
 	#main>.panel.intro header p {
@@ -2423,12 +2423,51 @@ body.lightbox-open {
     flex-direction: column;
     align-items: center;
     max-width: 90vw;
+		position: relative;
 }
 
 /* Expanded image */
 #lightbox .lightbox-content img {
     max-width: 90vw;
     max-height: calc(85vh - 2.5rem);
+}
+
+/* Close button */
+#lightbox-close {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+
+	width: 36px;
+	height: 36px;
+	padding: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: rgba(0, 0, 0, 0.55);
+	color: white;
+	border: none;
+	border-radius: 50%;
+
+	font-size: 26px;
+	line-height: 1;
+	cursor: pointer;
+
+	transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+#lightbox-close:hover {
+	background: rgba(0, 0, 0, 0.85);
+}
+
+/* Hide X when zoomed */
+#lightbox.zoom-mode #lightbox-close {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
 
 /* Caption beneath expanded image */
@@ -2470,7 +2509,7 @@ body.lightbox-open {
 
 #lightbox.active img.zoomed {
 	cursor: grab;
-	transition: none;
+	transition: transform 0.3s ease;
 }
 
 #lightbox.active img.dragging {

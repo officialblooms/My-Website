@@ -214,6 +214,7 @@
 	const lightbox = document.getElementById('lightbox');
 	const lightboxImg = lightbox.querySelector('img');
 	const lightboxCaption = document.getElementById('lightbox-caption');
+	const lightboxClose = document.getElementById('lightbox-close');
 
 	function updateCaptionWidth() {
     lightboxCaption.style.width = `${lightboxImg.getBoundingClientRect().width}px`;
@@ -386,6 +387,11 @@
 		$body.removeClass('lightbox-open');
 		zoomOut();
 	}
+
+	lightboxClose.addEventListener('click', e => {
+    e.stopPropagation();
+    closeLightbox();
+	});
 
 	// Close when clicking outside the image or Esc
 	lightbox.addEventListener('click', (e) => {
